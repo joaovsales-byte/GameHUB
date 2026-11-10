@@ -10,14 +10,14 @@ export function buscarPorId(id, callback){
     conexao.query(sql, [id], callback);
 }
 
-export function criar(dados, callback){
+export function criar(dados, callback) {
     const sql = "INSERT INTO estudios (nome, pais) VALUES (?, ?)";
     conexao.query(sql, [dados.nome, dados.pais], callback);
 }
 
-export function atualizar(id, dados, callback){
+export function atualizar(id, dados, callback) {
     const sql = "UPDATE estudios SET nome = ?, pais = ? WHERE id = ?";
-    conexao.query(sql, [dados.nome, dados.pais, req.id], callback);
+    conexao.query(sql, [dados.nome, dados.pais, id], callback);
 }
 
 export function excluir(id, callback){

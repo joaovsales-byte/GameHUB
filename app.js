@@ -24,7 +24,6 @@ app.get("/", (req, res) => {
 // #region estudios
 
 app.use("/estudios", estudioRoute);
- 
 
 // #endregion estudios
 // #region jogos
