@@ -1,0 +1,22 @@
+info:
+  name: put_players
+  type: http
+
+http:
+  method: PUT
+  url: http://localhost:3000/jogadores/1
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "João Vittor Atualizado",
+        "email": "joao@email.com",
+        "nickname": "joaov123"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
